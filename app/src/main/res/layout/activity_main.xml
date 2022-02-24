@@ -13,4 +13,16 @@
         android:paddingEnd="70dp"
         android:id="@+id/viewPagerImage"/>
 
+    <Button
+        android:id="@+id/next"
+        app:layout_constraintVertical_bias=".9"
+        app:layout_constraintHorizontal_bias=".9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

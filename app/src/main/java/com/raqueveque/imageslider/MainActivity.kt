@@ -1,8 +1,10 @@
 package com.raqueveque.imageslider
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -47,6 +49,12 @@ class MainActivity : AppCompatActivity() {
                 sliderHandler.postDelayed(sliderRunnable, 3000)
             }
         })
+
+        val btn: Button = findViewById(R.id.next)
+        btn.setOnClickListener {
+            startActivity(Intent(this, MainActivity2::class.java))
+            finish()
+        }
     }
 
     private val sliderRunnable = Runnable {
